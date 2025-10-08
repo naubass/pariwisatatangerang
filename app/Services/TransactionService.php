@@ -43,7 +43,7 @@ class TransactionService
     // simpan transaksi ke database
     $trxData = [
         'user_id' => $user->id,
-        'pricing_id' => $pricing->id,
+        'pricing_id' => $pricing->id, 
         'total_ticket' => $data['total_ticket'],
         'grand_total' => $grand_total,
         'started_at' => $data['started_at'],
@@ -60,7 +60,7 @@ class TransactionService
         'sub_total' => $total_ticket,
         'grand_total' => $grand_total,
         'started_at' => $data['started_at'],
-        'ended_at' => $ended_at,
+        'ended_at' => $ended_at, 
     ];
 }
 

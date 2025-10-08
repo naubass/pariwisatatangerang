@@ -114,7 +114,7 @@
                         },
                         onClose: function() {
                             alert("Transaksi dibatalkan.");
-                        }
+                        } 
                     });
                 } else {
                     alert("Gagal membuat Snap Token!");

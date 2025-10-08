@@ -22,7 +22,7 @@ class MidtransService
      * Membuat Snap Token dari parameter transaksi
      *
      * @param array $params
-     * @return string
+     * @return string 
      * @throws \Exception
      */
     public function createSnapToken(array $params): string

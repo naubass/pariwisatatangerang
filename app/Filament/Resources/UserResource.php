@@ -39,7 +39,7 @@ class UserResource extends Resource
                 ->helperText('minimum 9 characters')
                 ->password()
                 ->minLength(9)
-                ->maxLength(255)
+                ->maxLength(255) 
                 ->required(),
 
                 Forms\Components\Select::make('roles')

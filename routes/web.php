@@ -51,11 +51,9 @@ Route::middleware('auth')->group(function () {
         Route::get('/posts', [PostController::class, 'index'])->name('post.index');
     });
 
-    Route::fallback(function () {
-        return view('errors.404');
-    });
-    
-
+    // Route::fallback(function () {
+    //     return view('errors.404');
+    // });
 
     Route::middleware('role:customer')->group(function () {
         Route::get('/dashboard/transactions', [DashboardController::class, 'transactions'])

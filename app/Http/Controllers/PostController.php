@@ -169,7 +169,7 @@ return response()->json(['snap_token' => $snapToken['snap_token']]); // ✅ Ambi
         return view('post.checkout_success', compact('pricing'));
     }
 
-    public function search_keyword(Request $request)
+    public function search_keyword(Request $request) 
 {
     $request->validate([
         'search' => 'required|string'

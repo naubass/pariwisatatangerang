@@ -26,7 +26,7 @@ class PostService
         $user = User::Auth();
         
         if(!$post->postUsers()->where('user_id', $user->id)->exist()) {
-            $post->postUsers()->create([
+            $post->postUsers()->create([ 
                 'user_id' => $user->id,
                 'is_active' => true,
             ]); 

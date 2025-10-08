@@ -38,7 +38,7 @@ class CommentController extends Controller
 
         $comment->update([
             'comment' => $request->comment,
-        ]);
+        ]); 
 
         return redirect()->back()->with('success', 'Komentar berhasil diperbarui.');
     }

@@ -63,7 +63,7 @@ class PaymentService
             'custom_field1' => $user->id,
             'custom_field2' => json_encode([
                 'pricing_id' => $pricing->id,
-                'total_ticket' => $totalTicket,
+                'total_ticket' => $totalTicket, 
                 'started_at' => $data['started_at'],
                 'ended_at' => $data['ended_at'],
             ]),
